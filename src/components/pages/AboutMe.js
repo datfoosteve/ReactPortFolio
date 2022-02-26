@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../../assets/styles/MainStyle.css";
+import DigitalCard from "../DigitalBusinessCard/DigitalCard";
 export default function AboutMe() {
   return (
-    <div className="AboutMeWrapper" style={styles}>
+    <div className="AboutMeWrapper">
       <h2>About Me Section</h2>
+      <DigitalCard />
     </div>
   );
 }
