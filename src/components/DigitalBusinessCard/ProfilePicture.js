@@ -4,7 +4,9 @@ import React from "react";
 export default function ProfilePicture() {
   return (
     <>
-      <img src="../../images/profile-small.jpg" alt="profilePicture"></img>
+      <img src="../../images/profile-small.jpg" alt="profilePicture">
+        <div className="profilePicture">Hey</div>
+      </img>
     </>
   );
 }
