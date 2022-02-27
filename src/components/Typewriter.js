@@ -20,6 +20,7 @@ export default function () {
           ],
           autoStart: true,
           loop: true,
+          // @ts-ignore
           pauseFor: 2500,
         }}
       />

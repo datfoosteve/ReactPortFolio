@@ -1,9 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import AboutMe from "./components/pages/AboutMe";
-import Contact from "./components/pages/Contact";
-import Dashboard from "./components/pages/Dashboard";
-import Projects from "./components/pages/Projects";
 import MainContainer from "./components/MainContainer";
 import Particles from "react-tsparticles";
 import "./App.css";
