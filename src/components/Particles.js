@@ -570,7 +570,7 @@ export default function ParticlesComponent() {
             delay: 35,
           },
           shape: "square",
-          startCount: 0,
+          startCount: 1,
           size: {
             mode: "percent",
             height: 0,
@@ -592,7 +592,7 @@ export default function ParticlesComponent() {
               value: 40,
             },
             move: {
-              speed: 3,
+              speed: 3.5,
               outModes: {
                 default: "none",
                 right: "destroy",
@@ -609,7 +609,7 @@ export default function ParticlesComponent() {
               },
               animation: {
                 enable: true,
-                speed: 5,
+                speed: 6,
                 sync: true,
               },
             },
