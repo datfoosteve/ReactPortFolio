@@ -553,7 +553,7 @@ export default function ParticlesComponent() {
             velocityRate: 1,
           },
         },
-        pauseOnBlur: false,
+        pauseOnBlur: true,
         pauseOnOutsideViewport: true,
         responsive: [],
         style: {},

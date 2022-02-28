@@ -69,7 +69,7 @@ a:hover {
 }
 
 .flex-nav ul {
-  border: 4px double #86057b;
+  border: 4px outset #86057b;
   border-radius: 5px;
   list-style: none;
   margin: 0;
@@ -85,8 +85,8 @@ a:hover {
 
 /* Footer specific stylings */
 .flex-footer ul {
-  border: 4px double #86057b;
-  border-radius: 10px;
+  border: 4px outset #86057b;
+  border-radius: 5px;
   list-style: none;
   margin: 0;
   padding: 0px;
@@ -124,7 +124,7 @@ h3 {
 }
 
 /* .home__card:before {
-  border: 4px double #86057b;
+  border: 4px outset #86057b;
   box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
   border-radius: 10px;
   height: 500px;
@@ -138,7 +138,7 @@ h3 {
   opacity: 0.7;
 } */
 .home__card {
-  border: 4px double #86057b;
+  border: 4px outset #86057b;
   box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
   border-radius: 10px;
   height: 500px;
@@ -157,7 +157,7 @@ h3 {
   color: #cc5eff;
   font-size: 16px;
   font-weight: bold;
-  border: 4px double #86057b;
+  border: 4px outset #86057b;
   border-radius: 7px;
   max-width: 40%;
   min-width: 250px;
@@ -174,7 +174,7 @@ h3 {
 }
 
 .about__card {
-  border: 5px double rgba(158, 5, 163, 0.541);
+  border: 5px outset rgba(158, 5, 163, 0.541);
   border-radius: 10px;
   height: 350px;
   max-width: 20%;
@@ -188,7 +188,7 @@ h3 {
   background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity/see-through */
   color: #cc5eff;
   font-size: 16px;
-  border: 3px double #cc5eff80;
+  border: 3px outset #cc5eff80;
   border-radius: 7px;
   max-width: 40%;
   min-width: 250px;
@@ -217,7 +217,7 @@ details > summary {
 }
 
 .card {
-  border: 5px double rgb(0, 0, 0);
+  border: 5px outset rgb(0, 0, 0);
   border-radius: 10px;
   font-size: 16px;
   flex: 1 3 100px;
@@ -229,7 +229,7 @@ details > summary {
 }
 
 .card:hover {
-  border: 5px double rgb(243, 100, 224);
+  border: 5px outset rgb(243, 100, 224);
   font-size: 18px;
   animation-delay: 20ms;
   transition: all 0.85s;
@@ -247,7 +247,7 @@ header {
   color: #cc5eff;
   font-size: 16px;
   font-weight: bold;
-  border: 3px double rgba(243, 100, 224, 0.287);
+  border: 3px outset rgba(243, 100, 224, 0.287);
   position: relative;
   top: 40%;
   left: 75%;
@@ -277,7 +277,7 @@ header {
 .card4 header:hover,
 .card5 header:hover,
 .card6 header:hover {
-  border: 5px double #cc5eff;
+  border: 5px outset #cc5eff;
   border-radius: 10px;
   transition: all 0.75s;
 }
