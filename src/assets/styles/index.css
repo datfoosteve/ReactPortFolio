@@ -408,6 +408,9 @@ header {
   margin: 15px;
   width: 75%;
   padding: 10px;
+  font-size: 24px;
+  line-height-step: 10px;
+  word-wrap: break-word;
 }
 
 .form__spacing {
