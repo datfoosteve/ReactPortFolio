@@ -1,6 +1,6 @@
 import React from "react";
 import MainContainer from "./components/MainContainer";
-import ParticlesComponent from "./components/Particles";
+// import ParticlesComponent from "./components/Particles";
 // import Particles from "react-tsparticles";
 import "./App.css";
 //import { useState, useEffect } from "react";
@@ -16,7 +16,7 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      <ParticlesComponent />
+      {/* <ParticlesComponent /> */}
       <MainContainer />
     </>
   );

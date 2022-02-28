@@ -6,6 +6,7 @@ import About from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Typewriter from "./Typewriter";
+import ParticlesComponent from "../components/Particles";
 import "../assets/styles/index.css";
 
 export default function MainContainer() {
@@ -29,6 +30,7 @@ export default function MainContainer() {
 
   return (
     <div className="MainContaining">
+      <ParticlesComponent />
       {/* Pass current page from state, use function to update the page */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <h1>

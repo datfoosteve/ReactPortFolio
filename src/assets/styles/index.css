@@ -1,6 +1,4 @@
 /* Universal stylings */
-.App {
-}
 
 html {
   box-sizing: border-box;
@@ -32,7 +30,7 @@ textarea {
 h1 {
   text-align: center;
   font-size: 40px;
-  text-shadow: 3px 3px #000000;
+  text-shadow: 2.5px 2.5px #2a022a;
   margin: 15px;
 }
 
@@ -46,7 +44,7 @@ h2 {
 }
 
 a {
-  color: #a008a5;
+  color: #e00fe7;
   font-size: 20px;
   font-weight: bolder;
   letter-spacing: 3px;
@@ -55,12 +53,12 @@ a {
   display: inline-block;
   width: 100%;
   text-align: center;
-  transition: all 0.25s;
+  transition: all 0.5s;
 }
 
 a:hover {
-  background: rgba(253, 4, 241, 0.507);
-  color: #000000;
+  background: rgba(253, 4, 241, 0.37);
+  color: #231627;
 }
 
 .navcontainer {
@@ -123,22 +121,9 @@ h3 {
 .home__card:hover {
   transition: all 0.85s;
   opacity: 1;
+  size: 110vh;
 }
 
-/* .home__card:before {
-  border: 4px outset #86057b;
-  box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
-  border-radius: 10px;
-  height: 500px;
-  max-height: 90vw;
-  max-width: 50%;
-  min-width: 325px;
-  flex: 0.5 3 10px;
-  margin: 15px;
-  width: 23%;
-  margin-top: 30px;
-  opacity: 0.7;
-} */
 .home__card {
   border: 4px outset #86057b;
   box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
@@ -201,7 +186,9 @@ h3 {
 
 details > summary {
   cursor: pointer;
-  margin: 10px;
+
+  margin: 20px;
+  padding: 10px;
 }
 
 /* Projects */
@@ -213,7 +200,7 @@ details > summary {
   align-items: center;
   width: auto;
   height: 100vh -1px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
   max-width: 1200px;
   margin: 10px auto;
 }
@@ -222,19 +209,14 @@ details > summary {
   border: 5px outset rgb(0, 0, 0);
   border-radius: 10px;
   font-size: 16px;
-  flex: 1 3 100px;
+  flex: 1 3 150px;
   margin: 20px;
   padding: 20px;
   width: 75%;
   max-height: 75%;
-  transition: all 0.25s;
-}
-
-.card:hover {
-  border: 5px outset rgb(243, 100, 224);
-  font-size: 18px;
-  animation-delay: 20ms;
-  transition: all 0.85s;
+  transition: all 1.3s ease-in-out;
+  position: relative;
+  z-index: 0;
 }
 
 header {
@@ -259,10 +241,24 @@ header {
   min-width: 200px;
   padding: 10px;
   text-align: center;
+  transition: all 1.3s ease-in-out;
+}
+
+.project-text:hover {
+  border: 8px outset #cc5eff;
+  border-radius: 15px;
+  font-size: 19px;
+  transition: all 0.85s;
+  padding-bottom: 20px;
+  animation-delay: 20ms;
+  max-width: 70%;
+  min-width: 220px;
+  padding: 10px;
+  transform: translate(-30%, -40%);
 }
 
 .projects__bottom_spacing {
-  height: 300px;
+  height: 350px;
 }
 
 .card1 {
@@ -273,15 +269,28 @@ header {
   max-height: 450px;
 }
 
+.card:hover {
+  transform: scaleX(1.3) scaleY(1.3);
+  opacity: 2;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(63, 5, 73);
+}
+
 .card1 header:hover,
 .card2 header:hover,
 .card3 header:hover,
 .card4 header:hover,
 .card5 header:hover,
 .card6 header:hover {
-  border: 5px outset #cc5eff;
-  border-radius: 10px;
-  transition: all 0.75s;
+  border: 8px outset #cc5eff;
+  border-radius: 15px;
+  font-size: 26px;
+  transition: all 0.85s;
+  padding-bottom: 20px;
+  animation-delay: 20ms;
+  top: -50px;
+  right: 90px;
 }
 
 .card1 header {
@@ -297,7 +306,6 @@ header {
 }
 
 .card2 {
-  /* background-image: url(../../assets/images/Employeetracker.PNG); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,10 +325,11 @@ header {
 }
 
 .card3 {
-  /* background-image: url(../../assets/images/JATE.png); */
+  background-image: url("../../assets/images/jate.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100%;
   max-height: 450px;
 }
 
@@ -431,8 +440,8 @@ textarea {
     rgba(152, 1, 253, 0.178) 10%,
     rgba(0, 255, 98, 0.205) 30%,
     rgba(70, 51, 238, 0.13) 55%,
-    rgba(6, 255, 139, 0.048) 70%,
-    rgba(163, 51, 238, 0.041) 100%
+    rgba(6, 255, 139, 0.027) 70%,
+    rgba(163, 51, 238, 0.013) 100%
   );
 }
 
