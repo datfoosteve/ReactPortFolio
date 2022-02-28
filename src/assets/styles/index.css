@@ -1,7 +1,8 @@
 /* Universal stylings */
 html {
   box-sizing: border-box;
-  color: #979797;
+  color: #ee07e2c4;
+  padding: 0.1px;
 }
 
 section {
@@ -28,26 +29,26 @@ textarea {
 /* Top nav and footer stylings */
 h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
   text-shadow: 3px 3px #000000;
-  margin: 15px 0px 0px 0px;
+  margin: 15px;
 }
 
 h2 {
   text-align: center;
   vertical-align: center;
   font-size: 20px;
-  color: #979797;
-  text-shadow: 3px 3px #000000;
+  color: #b30fa565;
+  text-shadow: 3px 3px #bc03f5;
   margin: 0px 0px 0px 0px;
 }
 
 a {
-  color: #979797;
-  font-size: 18px;
+  color: #a008a5;
+  font-size: 20px;
   font-weight: bolder;
-  letter-spacing: 2px;
-  text-decoration: none;
+  letter-spacing: 3px;
+  text-decoration: underline;
   padding: 8px 0px;
   display: inline-block;
   width: 100%;
@@ -56,8 +57,8 @@ a {
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.95);
-  color: #ffffff;
+  background: rgba(253, 4, 241, 0.507);
+  color: #000000;
 }
 
 .navcontainer {
@@ -68,23 +69,23 @@ a:hover {
 }
 
 .flex-nav ul {
-  border: 5px solid #000000;
-  border-radius: 10px;
+  border: 4px double #86057b;
+  border-radius: 5px;
   list-style: none;
   margin: 0;
   padding: 0px;
   display: flex;
-  box-shadow: 3px 3px rgb(8, 8, 8);
+  box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
 }
 
 .flex-nav li {
   flex: 1;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.644);
 }
 
 /* Footer specific stylings */
 .flex-footer ul {
-  border: 5px solid #000000;
+  border: 4px double #86057b;
   border-radius: 10px;
   list-style: none;
   margin: 0;
@@ -92,7 +93,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  box-shadow: 3px 3px rgb(8, 8, 8);
+  box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
 }
 
 .flex-footer li {
@@ -104,8 +105,8 @@ h3 {
   text-align: center;
   vertical-align: center;
   font-size: 20px;
-  color: #979797;
-  text-shadow: 3px 3px #000000;
+  color: #11e923;
+  text-shadow: 3px 3px #052e168c;
   margin: 15px 0px 0px 0px;
 }
 
@@ -117,8 +118,14 @@ h3 {
   align-items: center;
 }
 
-.home__card {
-  border: 5px solid rgb(0, 0, 0);
+.home__card:hover {
+  transition: all 0.85s;
+  opacity: 1;
+}
+
+/* .home__card:before {
+  border: 4px double #86057b;
+  box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
   border-radius: 10px;
   height: 500px;
   max-height: 90vw;
@@ -127,14 +134,30 @@ h3 {
   flex: 0.5 3 10px;
   margin: 15px;
   width: 23%;
+  margin-top: 30px;
+  opacity: 0.7;
+} */
+.home__card {
+  border: 4px double #86057b;
+  box-shadow: 3px 3px rgba(230, 0, 251, 0.301);
+  border-radius: 10px;
+  height: 500px;
+  max-height: 90vw;
+  max-width: 50%;
+  min-width: 325px;
+  flex: 0.5 3 10px;
+  margin: 15px;
+  width: 23%;
+  margin-top: 30px;
+  opacity: 0.7;
 }
 
 .home__text {
   background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
-  color: #979797;
+  color: #cc5eff;
   font-size: 16px;
   font-weight: bold;
-  border: 3px solid #979797;
+  border: 4px double #86057b;
   border-radius: 7px;
   max-width: 40%;
   min-width: 250px;
@@ -151,7 +174,7 @@ h3 {
 }
 
 .about__card {
-  border: 5px solid rgb(0, 0, 0);
+  border: 5px double rgba(158, 5, 163, 0.541);
   border-radius: 10px;
   height: 350px;
   max-width: 20%;
@@ -163,9 +186,9 @@ h3 {
 
 .about__text {
   background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity/see-through */
-  color: #979797;
+  color: #cc5eff;
   font-size: 16px;
-  border: 3px solid #979797;
+  border: 3px double #cc5eff80;
   border-radius: 7px;
   max-width: 40%;
   min-width: 250px;
@@ -194,7 +217,7 @@ details > summary {
 }
 
 .card {
-  border: 5px solid rgb(0, 0, 0);
+  border: 5px double rgb(0, 0, 0);
   border-radius: 10px;
   font-size: 16px;
   flex: 1 3 100px;
@@ -206,8 +229,10 @@ details > summary {
 }
 
 .card:hover {
-  border: 5px solid rgb(0, 0, 0);
+  border: 5px double rgb(243, 100, 224);
   font-size: 18px;
+  animation-delay: 20ms;
+  transition: all 0.85s;
 }
 
 header {
@@ -218,15 +243,15 @@ header {
 }
 
 .project-text {
-  background-color: rgba(0, 0, 0, 0.8); /* Black w/opacity/see-through */
-  color: #979797;
+  background-color: rgba(0, 0, 0, 0.918); /* Black w/opacity/see-through */
+  color: #cc5eff;
   font-size: 16px;
   font-weight: bold;
-  border: 3px solid #979797;
+  border: 3px double rgba(243, 100, 224, 0.287);
   position: relative;
   top: 40%;
   left: 75%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -40%);
   z-index: 1;
   max-width: 50%;
   min-width: 200px;
@@ -244,6 +269,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 450px;
+}
+
+.card1 header:hover,
+.card2 header:hover,
+.card3 header:hover,
+.card4 header:hover,
+.card5 header:hover,
+.card6 header:hover {
+  border: 5px double #cc5eff;
+  border-radius: 10px;
+  transition: all 0.75s;
 }
 
 .card1 header {
