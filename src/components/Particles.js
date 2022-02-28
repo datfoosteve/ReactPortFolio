@@ -185,20 +185,20 @@ export default function ParticlesComponent() {
             bounce: {
               horizontal: {
                 random: {
-                  enable: true,
+                  enable: false,
                   minimumValue: 0.01,
                 },
-                value: 1,
+                value: 0,
               },
               vertical: {
                 random: {
-                  enable: true,
+                  enable: false,
                   minimumValue: 0.01,
                 },
-                value: 1,
+                value: 0,
               },
             },
-            enable: true,
+            enable: false,
             mode: "bounce",
             overlap: {
               enable: true,
@@ -413,7 +413,7 @@ export default function ParticlesComponent() {
             animation: {
               count: 0,
               enable: true,
-              speed: 1,
+              speed: 0,
               sync: false,
               destroy: "none",
               startValue: "random",

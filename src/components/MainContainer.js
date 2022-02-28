@@ -28,7 +28,7 @@ export default function MainContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="MainContaining">
       {/* Pass current page from state, use function to update the page */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <h1>
