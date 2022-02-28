@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Typewriter from "./Typewriter";
+import "../assets/styles/index.css";
 
 export default function MainContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -29,6 +31,9 @@ export default function MainContainer() {
     <div>
       {/* Pass current page from state, use function to update the page */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <h1>
+        <Typewriter />
+      </h1>
       {/* Render the current page */}
       {renderPage()}
       {/* Render footer */}

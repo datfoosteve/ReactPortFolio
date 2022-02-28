@@ -53,7 +53,7 @@ export default function ParticlesComponent() {
           detectsOn: "window",
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "repulse",
             },
             onDiv: {
@@ -67,9 +67,9 @@ export default function ParticlesComponent() {
               enable: false,
               mode: "repulse",
               parallax: {
-                enable: false,
-                force: 2,
-                smooth: 10,
+                enable: true,
+                force: 120,
+                smooth: 120,
               },
             },
             resize: true,
@@ -82,7 +82,7 @@ export default function ParticlesComponent() {
               easing: "ease-out-quad",
               factor: 1,
               maxSpeed: 30,
-              speed: 1,
+              speed: 2,
             },
             bounce: {
               distance: 200,
@@ -146,7 +146,7 @@ export default function ParticlesComponent() {
               easing: "ease-out-quad",
             },
             slow: {
-              factor: 2,
+              factor: 3,
               radius: 200,
             },
             trail: {
@@ -160,7 +160,7 @@ export default function ParticlesComponent() {
         motion: {
           disable: false,
           reduce: {
-            factor: 3,
+            factor: 4,
             value: true,
           },
         },
@@ -169,14 +169,14 @@ export default function ParticlesComponent() {
             horizontal: {
               random: {
                 enable: true,
-                minimumValue: 0.1,
+                minimumValue: 0.01,
               },
               value: 1,
             },
             vertical: {
               random: {
                 enable: true,
-                minimumValue: 0.1,
+                minimumValue: 0.01,
               },
               value: 1,
             },
@@ -186,14 +186,14 @@ export default function ParticlesComponent() {
               horizontal: {
                 random: {
                   enable: true,
-                  minimumValue: 0.1,
+                  minimumValue: 0.01,
                 },
                 value: 1,
               },
               vertical: {
                 random: {
                   enable: true,
-                  minimumValue: 0.1,
+                  minimumValue: 0.01,
                 },
                 value: 1,
               },
@@ -295,7 +295,7 @@ export default function ParticlesComponent() {
             count: 1,
             delay: {
               random: {
-                enable: true,
+                enable: false,
                 minimumValue: 0,
               },
               value: 0,
@@ -304,7 +304,7 @@ export default function ParticlesComponent() {
             duration: {
               random: {
                 enable: false,
-                minimumValue: 0.0001,
+                minimumValue: 0,
               },
               value: 0,
               sync: false,
@@ -350,7 +350,7 @@ export default function ParticlesComponent() {
             decay: 0,
             distance: {},
             direction: "right",
-            drift: 0,
+            drift: 0.000001,
             enable: true,
             gravity: {
               acceleration: 9.81,
@@ -379,7 +379,7 @@ export default function ParticlesComponent() {
             },
             random: false,
             size: false,
-            speed: 0.15,
+            speed: 0.25,
             spin: {
               acceleration: 0,
               enable: false,
@@ -406,14 +406,14 @@ export default function ParticlesComponent() {
           },
           opacity: {
             random: {
-              enable: true,
+              enable: false,
               minimumValue: 0.1,
             },
             value: 1,
             animation: {
               count: 0,
               enable: true,
-              speed: 2,
+              speed: 1,
               sync: false,
               destroy: "none",
               startValue: "random",
@@ -532,7 +532,7 @@ export default function ParticlesComponent() {
               opacity: 1,
             },
             particles: {
-              enable: true,
+              enable: false,
               frequency: 0.001,
               opacity: 1,
             },
@@ -609,7 +609,7 @@ export default function ParticlesComponent() {
               },
               animation: {
                 enable: true,
-                speed: 6,
+                speed: 7,
                 sync: true,
               },
             },
